@@ -5,6 +5,8 @@ body {
     font-family: Arial, sans-serif;
   }
   
+  /* ヘッダーの見た目 */
+
   header {
     position: relative;
     z-index: 100;
@@ -41,20 +43,22 @@ body {
     font-size: 18px;
   }
   
-  /*
-  nav a:hover {
-    color: #666;
-  }
-  */
+ /* mainの見た目 */
   
   main {
-    z-index: 10;
     color: #333;
-    background: linear-gradient( to bottom, #fff 85%, #ffffff00);
+    margin-bottom: 50px;
+    background: linear-gradient( to bottom, #fff 450px, #ffffff00);
   }
   
+  .eng-text {
+    font-size: 20px;
+    margin-bottom: 0px;
+    font-family: 'Montserrat', sans-serif;
+  }
+
   section {
-    margin-bottom: 40px;
+    margin-bottom: 20px;
   }
 
   section.profile {
@@ -62,13 +66,7 @@ body {
     flex-direction: column;
     align-items: center;
   }
-  
-  h2 {
-    font-size: 28px;
-    font-weight: bold;
-    margin-bottom: 20px;
-  }
-  
+
   ul {
     list-style: none;
     margin: 0;
@@ -79,15 +77,44 @@ body {
   .works {
     float: left;
   }
+
+  /* latestProjectsの見た目 */
+  .project-box {
+    padding: 10px;
+    display: flex;
+  }
+
+  .project-box img {
+    width: 300px;
+    border-radius: 5px;
+  }
+
+  a {
+  color: #333;
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  }
+
+  .latestProjects {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .project-box:hover {
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
   
+  /* フッダーの見た目 */
+
   footer {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 30px; /* footerの高さを設定する */
-  background-color: #C3F2F5;
-  padding: 10px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 30px; /* footerの高さを設定する */
+    background-color: #C3F2F5;
+    padding: 10px;
   }
 
   footer p {
@@ -95,24 +122,4 @@ body {
     font-size: small;
     float: right;
 
-  /*
-  li {
-    background-color: #fff;
-    padding: 20px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
-  }
-
-
-  /*ヘッダーのボタン*/
-  /*
-  .btn {
-    border-radius: 3px;
-    background-color: lightblue;
-    padding: 10px;
-    text-decoration: none;
-    color: white;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-  }
-  */
 }
