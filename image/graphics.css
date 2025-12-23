@@ -1,0 +1,60 @@
+/* Graphicsセクション全体 */
+#graphics {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+/* 1. 大プレビューエリア */
+.main-preview-area {
+    max-width: 800px; /* 大プレビューの最大幅 */
+    margin: 0 auto 30px; 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative; 
+    
+    /* ★ 修正点1: 高さを固定（例: 500pxに固定） ★ */
+    height: 500px; 
+}
+
+.main-image {
+    /* max-widthやmax-heightを削除し、親要素の100%にする */
+    width: 100%;
+    height: 100%;
+    
+    /* ★ 修正点2: object-fit を使用 ★ */
+    /* object-fit: contain;  ← 画像全体が表示されるが、余白ができる可能性がある
+    /* object-fit: cover;  ← 画像が箱いっぱいに広がり、はみ出した部分は切り取られる */
+    object-fit: contain; /* アスペクト比を維持し、画像全体がフレーム内に収まるようにする */
+    
+    /* 中央揃えのプロパティを維持 */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* 2. 小プレビュー（サムネイル）エリア */
+.thumbnail-area {
+    display: flex;
+    justify-content: center; /* 中央寄せ */
+    flex-wrap: wrap; /* 画面が狭くなったら折り返す */
+    gap: 10px; /* サムネイル間の間隔 */
+}
+
+.thumbnail {
+    width: 80px; /* サムネイルのサイズ */
+    height: 80px;
+    object-fit: cover; /* 画像が欠けないように切り抜く */
+    cursor: pointer; /* マウスカーソルをポインターにする */
+    border: 3px solid transparent; /* アクティブなサムネイルのための枠線 */
+    border-radius: 8px;
+    transition: border 0.2s ease;
+}
+
+.thumbnail:hover, .thumbnail.active {
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    transform: scale(1.05);
+}

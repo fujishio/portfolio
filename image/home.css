@@ -1,0 +1,63 @@
+ /* Homeの見た目 */
+#top-image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    float: right;
+}
+
+.skills {
+    padding: 10px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+    font-family: "Meiryo";
+    font-size: 13px;
+}
+
+li.skills {
+    display: inline-block;
+    flex-wrap: wrap;
+    background-color: #F5FFFF;
+    list-style-type: none;
+    margin: 5px;
+    border-radius: 3px;
+    box-sizing: border-box;
+    width: auto;
+}
+
+.likes {
+    padding: 10px;
+    font-family: "Meiryo";
+    font-size: 13px;
+}
+
+li.likes {
+    display: inline-block;
+    flex-wrap: wrap;
+    background-color: #EDFFFF;
+    list-style-type: none;
+    margin: 3px;
+    border-radius: 3px;
+    box-sizing: border-box;
+    width: auto;
+}
+
+section h4 {
+    font-family: "Meiryo";
+    color:#555;
+    padding: 10px;
+    margin-top: 30px;
+    margin-bottom: 0px;
+}
+
+section.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

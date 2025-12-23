@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>Portfolio</title>
+
+  <!-- styles.cssの読み込み -->
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="home.css">
+  <link rel="stylesheet" href="graphics.css">
+  <link rel="stylesheet" href="modal.css">
+
+  <!-- google fonts の読み込み -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">  
+  <link href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c" rel="stylesheet">
+
+  <!-- Font Awesome の読み込み -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+  <header>
+    <h1>KOHKO</h1>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#works">Works</a></li>
+        <li><a href="#graphics">Graphics</a></li>
+        <!-- <li><a href="#contact">Contact</a></li> -->
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="home">
+      <div id="top-image">
+        <img src="image/20200508-mini.jpg" alt="しおちゃん">
+        <p class="eng-text">Hello, this is Kohko's portfolio site!</p>
+      </div>
+      <br>
+      <h4>Skills</h4>
+      <div>
+        <li class="skills">Drawing</li>
+        <li class="skills">SAI2</li>
+        <li class="skills">Clip Studio</li>
+        <li class="skills">Adobe Photoshop</li>
+        <li class="skills">Adobe Premire Pro</li>
+        <li class="skills">Live 2D</li>
+        <li class="skills">HTML & CSS</li>
+        <li class="skills">TOEIC IP L&R 880</li>
+        <li class="skills">HSK grade 4</li>
+        <li class="skills">Nomal Vehicles License</li>
+      </div>
+
+      <h4>Likes</h4>
+      <div>
+        <li class="likes">SF literature</li>
+        <li class="likes">Submarine Movies</li>
+        <li class="likes">Garden Tree Trimming</li>
+        <li class="likes">ANIME</li>
+        <li class="likes">KARAOKE</li>
+        <li class="likes">Games</li>
+        <li class="likes">Cookings</li>
+      </div>
+    </section>
+
+
+
+    <!-- 制作　-->
+     <section id="works">
+      <h1>Works</h1>
+      <h2>Games</h2>
+      
+      <section class="latestProjects">
+        <div class="project-box">
+            <div class="thumbnail-trigger" onclick="openModal('birdol-modal')"> 
+                <img src="image/birdol.jpg" alt="Birdol March">
+                <h3>Birdol March</h3>
+            </div>
+        </div>
+        <div class="project-box">
+            <div class="thumbnail-trigger" onclick="openModal('hulogn-modal')">
+                <img src="image/hulogen.jpg" alt="Hulog:N">
+                <h3>Hulog:N</h3>
+            </div>
+        </div>
+        <div class="project-box">
+            <div class="thumbnail-trigger" onclick="openModal('baker-modal')">
+                <img src="image/Baker.jpg" alt="I wanna be the baker">
+                <h3>I wanna be the baker</h3>
+            </div>
+        </div>
+      </section>
+
+      <!-- モーダルの内容　-->
+      <div id="birdol-modal" class="modal">
+          <div class="modal-content">
+              <span class="close-button" onclick="closeModal('birdol-modal')">&times;</span>
+              <img src="../image/birdolBig.jpg" alt="birdol" class="detail-image">
+              <h2>Birdol March / バードル・マーチ</h2>
+              <h3 style="color: rgb(51, 51, 51);">野鳥×アイドル＝バードル！！</h3>
+              <table>
+              <tr>
+                <th>【制作概要】</th>
+                <td>早稲田祭2021に向けて、デジタル創作サークル「経営情報学会(MIS.W)」の有志（チーム名：鳥企画）が作成した、iOS/Android対応ソシャゲ風育成ゲーム『バードル・マーチ』です。</td>
+              </tr>
+              <tr>
+                <th>【制作期間】</th>
+                <td>2021年5月〜11月 (約6ヶ月間)</td>
+              </tr>
+              <tr>
+                <th>【使用技術】</th>
+                <td>自身: Adobe Photoshop, CLIP STUDIO, Adobe Premiere Pro, HackMD, Slack
+                  <br>チーム: Unity (C#), Git, Go, Cubase, Blender
+                </td>
+              </tr>
+              <tr>
+                <th>【担当範囲】</th>
+                <td>企画立案、プロジェクトリーダー（マネジメント全般）、CG責任者</td>
+              </tr>
+              <tr>
+                <th>【チーム構成】</th>
+                <td>計32名 <br>(プログラマー10名、イラストレーター15名、シナリオ5名、音楽2名)</td>
+              </tr>
+            </table>
+              
+              <p style="color: rgb(76, 86, 219);"><b>Apple Store、Google Play Store、Microsoft Storeでの配布&オンラインサービスを終了し、現在は
+                <a href="https://github.com/Project-Birdol/birdol" target="_blank" class="button">Github</a>
+                でオフライン版を配布中です！</b></p>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/yk2nnOtywMk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </div>
+      </div>
+
+      <div id="hulogn-modal" class="modal">
+          <div class="modal-content">
+              <span class="close-button" onclick="closeModal('hulogn-modal')">&times;</span>
+              <h2>Hulog:N 詳細</h2>
+              <table>
+              <tr>
+                <th>【制作概要】</th>
+                <td>MIS.W Game Jam 2020にて、3日間で制作した横スクロールアクションゲームです。</td>
+              </tr>
+              <tr>
+                <th>【担当範囲】</th>
+                <td>イラスト（リード）、デザイン、シナリオ</td>
+              </tr>
+            </table>
+              <a href="project2.html" target="_blank">現在、配布されておりません。</a> 
+          </div>
+      </div>
+
+      <div id="baker-modal" class="modal">
+          <div class="modal-content">
+              <span class="close-button" onclick="closeModal('baker-modal')">&times;</span>
+              <h2>I wanna be the baker</h2>
+              <img src="image/baker-title.jpg" alt="baker" class="detail-image">
+              <table>
+              <tr>
+                <th>【制作概要】</th>
+                <td>MIS.W Game Jam 2019にて、3日間で制作したタイピング&アクションゲームです。</td>
+              </tr>
+              <tr>
+                <th>【担当範囲】</th>
+                <td>イラスト、デザイン</td>
+              </tr>
+            </table>
+            <div class="button-container">
+              <a href="https://www.freem.ne.jp/win/game/20217" target="_blank" class="button">配布ページへ移動</a>
+            </div>
+            <img src="image/mahousyoujyo-smile.png" alt="baker" class="detail-image">
+            <img src="image/desktop-zangyou.jpg" alt="baker" class="detail-image">
+          </div>
+      </div>
+
+
+
+      <!-- ウェブサイト制作　-->
+      <h2>Websites</h2>
+
+      <section class="latestProjects">
+        <div class="project-box">
+          <div class="thumbnail-trigger" onclick="openModal('Accomodation-modal')"> 
+              <img src="image/BlueBird.jpg" alt="BlueBird Cottage">
+              <h3>民泊 黒門館アネックス1F / 青鳥荘</h3>
+          </div>
+      </section>
+
+      <!-- モーダルの内容　-->
+        <div id="Accomodation-modal" class="modal">
+          <div class="modal-content">
+            <span class="close-button" onclick="closeModal('Accomodation-modal')">&times;</span>
+            <h2>黒門館アネックス1F / 青鳥荘</h2>
+            <h3>ホームページ</h3>
+            <iframe 
+              id="AnnexFrame" 
+              src="https://kuromonkan.sakura.ne.jp/website/index.html" 
+              style="width: 100%; height: 500px; border: 1px solid #ccc;"
+              title="ホームページ プレビュー"
+            ></iframe>
+            <br><br>
+            <table>
+              <tr>
+                <th>【開発言語】</th>
+                <td>HTML, CSS, JavaScript</td>
+              </tr>
+              <tr>
+                <th>【制作概要】</th>
+                <td>日英中の言語切替が可能な、民泊宿泊者向けのホームページ兼アクセスガイドです。</td>
+              </tr>
+            </table>
+            
+            <div class="button-container"> 
+              <a href="https://kuromonkan.sakura.ne.jp/website/index.html" target="_blank" class="button">
+                ホームページへ移動</a>
+            </div>
+          </div>
+        </div>
+    </section>
+
+
+
+    <!-- グラフィック制作　-->
+    <section id="graphics">
+    <h1>Graphics</h1>
+      <div class="main-preview-area">
+        <img id="mainImage" src="image\enaga.png" alt="メイングラフィックプレビュー" class="main-image">
+      </div>
+
+      <div class="thumbnail-area">
+        <img 
+          src="image\enaga.png"
+          alt="サムネイル 初期"
+          class="thumbnail active"
+          data-large-src="image\enaga.png"
+          onclick="changeImage(this)"
+        >
+        <img 
+            src="image\suzume.png" 
+            alt="サムネイル 1" 
+            class="thumbnail" 
+            data-large-src="image\suzume.png"
+            onclick="changeImage(this)"
+        >
+        <img 
+            src="image\owl.png" 
+            alt="サムネイル 2" 
+            class="thumbnail" 
+            data-large-src="image\owl.png"
+            onclick="changeImage(this)"
+        >
+        <img 
+            src="image\tanabata.jpg" 
+            alt="サムネイル 3" 
+            class="thumbnail" 
+            data-large-src="image\tanabata.jpg"
+            onclick="changeImage(this)"
+        >
+        <img 
+            src="image\jane.jpg" 
+            alt="サムネイル 4" 
+            class="thumbnail" 
+            data-large-src="image\jane.jpg"
+            onclick="changeImage(this)"
+        >
+        <img 
+            src="image\wakamo.jpg" 
+            alt="サムネイル 5" 
+            class="thumbnail" 
+            data-large-src="image\wakamo.jpg"
+            onclick="changeImage(this)"
+        >
+        <img 
+            src="image\revdol.jpg" 
+            alt="サムネイル 6" 
+            class="thumbnail" 
+            data-large-src="image\revdol.jpg"
+            onclick="changeImage(this)"
+        >
+        <img 
+            src="image\tamamo.jpg" 
+            alt="サムネイル 7" 
+            class="thumbnail" 
+            data-large-src="image\tamamo.jpg"
+            onclick="changeImage(this)"
+        >
+      </div>
+    </section>
+
+
+
+    <!-- お問い合わせ　
+    <section id="contact"></section> -->
+  </main>
+  
+  <footer>
+    <p>© 2025 All Rights Reserved.</p>
+  </footer>
+
+  <a href="#" id="pageTop">
+    <i class="fas fa-arrow-up"></i>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
