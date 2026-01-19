@@ -2,23 +2,22 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <title>Portfolio</title>
+  <meta name="description" content="コウコのポートフォリオサイト。ゲーム開発、Webサイト制作、グラフィック制作の実績を掲載。">
+  <meta name="keywords" content="ポートフォリオ,ゲーム開発,Webデザイン,イラスト,Unity,HTML,CSS">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio | KOHKO</title>
 
-  <!-- styles.cssの読み込み -->
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="home.css">
   <link rel="stylesheet" href="graphics.css">
   <link rel="stylesheet" href="modal.css">
 
-  <!-- google fonts の読み込み -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">  
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c" rel="stylesheet">
 
-  <!-- Font Awesome の読み込み -->
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="..." crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="..." crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -29,18 +28,24 @@
         <li><a href="#home">Home</a></li>
         <li><a href="#works">Works</a></li>
         <li><a href="#graphics">Graphics</a></li>
-        <!-- <li><a href="#contact">Contact</a></li> -->
       </ul>
     </nav>
   </header>
 
   <main>
+    <!-- Home Section -->
     <section class="home">
+      <br>
       <div id="top-image">
         <img src="image/20200508-mini.jpg" alt="しおちゃん">
-        <p class="eng-text">Hello, this is Kohko's portfolio site!</p>
+        <p class="eng-text">
+          <br>
+          <span class="highlight-text">Things don't always turn out as you expect, <br>but they do turn out as you DO.</span><br><br>
+          座右の銘「思う通りにはならないが、やった通りにはなる」<br>
+          正解が無い時も、試行錯誤を重ねて前に進み続ける
+        </p>
       </div>
-      <br>
+
       <h4>Skills</h4>
       <div>
         <li class="skills">Drawing</li>
@@ -53,6 +58,8 @@
         <li class="skills">TOEIC IP L&R 880</li>
         <li class="skills">HSK grade 4</li>
         <li class="skills">Nomal Vehicles License</li>
+        <li class="skills">PHP</li>
+        <li class="skills">MySQL</li>
       </div>
 
       <h4>Likes</h4>
@@ -64,237 +71,340 @@
         <li class="likes">KARAOKE</li>
         <li class="likes">Games</li>
         <li class="likes">Cookings</li>
+        <li class="likes">Aquarium</li>
       </div>
     </section>
 
-
-
-    <!-- 制作　-->
-     <section id="works">
-      <h1>Works</h1>
+    <!-- Works Section -->
+    <section id="works">
+      <h1><br>Works</h1>
       <h2>Games</h2>
-      
+
       <section class="latestProjects">
         <div class="project-box">
-            <div class="thumbnail-trigger" onclick="openModal('birdol-modal')"> 
-                <img src="image/birdol.jpg" alt="Birdol March">
-                <h3>Birdol March</h3>
-            </div>
+          <div class="thumbnail-trigger" onclick="openModal('birdol-modal')">
+            <img src="image/birdol.jpg" alt="Birdol March">
+            <h3>Birdol March</h3>
+          </div>
         </div>
         <div class="project-box">
-            <div class="thumbnail-trigger" onclick="openModal('hulogn-modal')">
-                <img src="image/hulogen.jpg" alt="Hulog:N">
-                <h3>Hulog:N</h3>
-            </div>
+          <div class="thumbnail-trigger" onclick="openModal('hulogn-modal')">
+            <img src="image/hulogen.jpg" alt="Hulog:N">
+            <h3>Hulog:N</h3>
+          </div>
         </div>
         <div class="project-box">
-            <div class="thumbnail-trigger" onclick="openModal('baker-modal')">
-                <img src="image/Baker.jpg" alt="I wanna be the baker">
-                <h3>I wanna be the baker</h3>
-            </div>
+          <div class="thumbnail-trigger" onclick="openModal('baker-modal')">
+            <img src="image/Baker.jpg" alt="I wanna be the baker">
+            <h3>I wanna be the baker</h3>
+          </div>
         </div>
       </section>
 
-      <!-- モーダルの内容　-->
+      <!-- Birdol Modal -->
       <div id="birdol-modal" class="modal">
-          <div class="modal-content">
-              <span class="close-button" onclick="closeModal('birdol-modal')">&times;</span>
-              <img src="image/birdolBig.jpg" alt="birdol" class="detail-image">
-              <h2>Birdol March / バードル・マーチ</h2>
-              <h3 style="color: rgb(51, 51, 51);">野鳥×アイドル＝バードル！！</h3>
-              <table>
-              <tr>
-                <th>【制作概要】</th>
-                <td>早稲田祭2021に向けて、デジタル創作サークル「経営情報学会(MIS.W)」の有志（チーム名：鳥企画）が作成した、iOS/Android対応ソシャゲ風育成ゲーム『バードル・マーチ』です。</td>
-              </tr>
-              <tr>
-                <th>【制作期間】</th>
-                <td>2021年5月〜11月 (約6ヶ月間)</td>
-              </tr>
-              <tr>
-                <th>【使用技術】</th>
-                <td>自身: Adobe Photoshop, CLIP STUDIO, Adobe Premiere Pro, HackMD, Slack
-                  <br>チーム: Unity (C#), Git, Go, Cubase, Blender
-                </td>
-              </tr>
-              <tr>
-                <th>【担当範囲】</th>
-                <td>企画立案、プロジェクトリーダー（マネジメント全般）、CG責任者</td>
-              </tr>
-              <tr>
-                <th>【チーム構成】</th>
-                <td>計32名 <br>(プログラマー10名、イラストレーター15名、シナリオ5名、音楽2名)</td>
-              </tr>
-            </table>
-              
-              <p style="color: rgb(76, 86, 219);"><b>Apple Store、Google Play Store、Microsoft Storeでの配布&オンラインサービスを終了し、現在は
-                <a href="https://github.com/Project-Birdol/birdol" target="_blank" class="button">Github</a>
-                でオフライン版を配布中です！</b></p>
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/yk2nnOtywMk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-          </div>
+        <div class="modal-content">
+          <span class="close-button" onclick="closeModal('birdol-modal')">&times;</span>
+          <img src="../image/birdolBig.jpg" alt="birdol" class="detail-image">
+          <h2>Birdol March / バードル・マーチ</h2>
+          <h4>野鳥×アイドル＝バードル！！</h4>
+          <h3>制作背景</h3>
+          <table>
+            <tr>
+              <th>【制作概要】</th>
+              <td>早稲田祭2021に向けて、デジタル創作サークル「経営情報学会(MIS.W)」の有志（チーム名：鳥企画）が作成した、iOS/Android対応ソシャゲ風育成ゲーム『バードル・マーチ』です。</td>
+            </tr>
+            <tr>
+              <th>【制作期間】</th>
+              <td>2021年5月〜11月 (約6ヶ月間)</td>
+            </tr>
+            <tr>
+              <th>【使用技術】</th>
+              <td>自身: Adobe Photoshop, CLIP STUDIO, Adobe Premiere Pro, HackMD, Slack<br>
+                  チーム: Unity (C#), Git, Go, Cubase, Blender
+              </td>
+            </tr>
+            <tr>
+              <th>【担当範囲】</th>
+              <td>企画立案、プロジェクトリーダー（マネジメント全般）、CG責任者</td>
+            </tr>
+            <tr>
+              <th>【チーム構成】</th>
+              <td>計32名 <br>(プログラマー10名、イラストレーター15名、シナリオ5名、音楽2名)</td>
+            </tr>
+          </table>
+
+          <p><b>Apple Store、Google Play Store、Microsoft Storeでの配布&オンラインサービスを終了し、現在は
+            <a href="https://github.com/Project-Birdol/birdol" target="_blank" rel="noopener noreferrer" class="button">Github</a>
+            でオフライン版を配布中です！</b></p>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/yk2nnOtywMk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          
+          <h3>プロジェクトの工夫</h3>
+          <table>
+            <tr>
+              <th>【マネジメント】</th>
+              <td>学業が最優先のため、最悪リーダーとテックリーダーだけで展示できるよう優先順位をつけて作業を進めました。</td>
+            </tr>
+            <tr>
+              <th>【プログラム】</th>
+              <td>プログラム担当がサーバーとの通信機能を学ぶため、ユーザー管理機能を実装しました。</td>
+            </tr>
+            <tr>
+              <th>【CG管理】</th>
+              <td>各CGスタッフのスケジュールや作業可能量がバラバラのため、キャラクター数を可変にして調整できるようにしました。</td>
+            </tr>
+            <tr>
+              <th>【プラットフォーム】</th>
+              <td>これまで開発したゲームはPCのみでしたが、みんなでスマートフォンで遊べるゲームを目指し、アプリストアへのリリースを目標としました。</td>
+            </tr>
+            <tr>
+              <th>【UI/UX】</th>
+              <td>手でキャラクターを触って動かす面白さが重要と考え、成長パートとライブ（実戦）パート両方で、キャラクターをドラッグアンドドロップして動かすUIを採用しました。</td>
+            </tr>
+          </table>
+        
+        </div>
       </div>
 
+      <!-- Hulogn Modal -->
       <div id="hulogn-modal" class="modal">
-          <div class="modal-content">
-              <span class="close-button" onclick="closeModal('hulogn-modal')">&times;</span>
-              <h2>Hulog:N 詳細</h2>
-              <table>
-              <tr>
-                <th>【制作概要】</th>
-                <td>MIS.W Game Jam 2020にて、3日間で制作した横スクロールアクションゲームです。</td>
-              </tr>
-              <tr>
-                <th>【担当範囲】</th>
-                <td>イラスト（リード）、デザイン、シナリオ</td>
-              </tr>
-            </table>
-              <a href="project2.html" target="_blank">現在、配布されておりません。</a> 
-          </div>
+        <div class="modal-content">
+          <span class="close-button" onclick="closeModal('hulogn-modal')">&times;</span>
+          <h2>Hulog:N</h2>
+          <table>
+            <h3>制作背景</h3>
+            <tr>
+              <th>【制作概要】</th>
+              <td>MIS.W Game Jam 2020にて、3日間で制作した横スクロールアクションゲームです。<br>
+                TypeScriptでブラウザゲームが作りたい人、重めのシナリオが好きな人、美少女イラストが描きたい人の想いが合致して誕生しました。</td>
+            </tr>
+            <tr>
+              <th>【担当範囲】</th>
+              <td>イラスト（リード）、デザイン、シナリオ</td>
+            </tr>
+            <tr>
+              <th>【開発状況】</th>
+              <td>コロナ禍でオンライン開催となり、帰宅がないため無限デスマーチとなりました。休息の必要性を実感した貴重な経験です。</td>
+            </tr>
+          </table>
+
+          <h3>プロジェクトの工夫</h3>
+          <table>
+            <tr>
+              <th>【ゲームプレイ】</th>
+              <td>横スクロールシューティングの楽しさと難易度調整に力を入れて製作しました</td>
+            </tr>
+            <tr>
+              <th>【ビジュアル】</th>
+              <td>必要なパーツの制作だけでなく、アニメーション差分や隠し要素を制作し、手間をあまり増やさずに豪華な印象を実現しました</td>
+            </tr>
+            <tr>
+              <th>【評価】</th>
+              <td>イベント参加チームの中でかなり好評を得ることができました</td>
+            </tr>
+          </table>
+
+          <p>現在、配布されておりません。</p>
+        </div>
       </div>
 
+      <!-- Baker Modal -->
       <div id="baker-modal" class="modal">
-          <div class="modal-content">
-              <span class="close-button" onclick="closeModal('baker-modal')">&times;</span>
-              <h2>I wanna be the baker</h2>
-              <img src="image/baker-title.jpg" alt="baker" class="detail-image">
-              <table>
-              <tr>
-                <th>【制作概要】</th>
-                <td>MIS.W Game Jam 2019にて、3日間で制作したタイピング&アクションゲームです。</td>
-              </tr>
-              <tr>
-                <th>【担当範囲】</th>
-                <td>イラスト、デザイン</td>
-              </tr>
-            </table>
-            <div class="button-container">
-              <a href="https://www.freem.ne.jp/win/game/20217" target="_blank" class="button">配布ページへ移動</a>
-            </div>
-            <img src="image/mahousyoujyo-smile.png" alt="baker" class="detail-image">
-            <img src="image/desktop-zangyou.jpg" alt="baker" class="detail-image">
+        <div class="modal-content">
+          <span class="close-button" onclick="closeModal('baker-modal')">&times;</span>
+          <h2>I wanna be the baker</h2>
+          <img src="image/baker-title.jpg" alt="baker" class="detail-image">
+          <table>
+            <tr>
+              <th>【制作概要】</th>
+              <td>MIS.W Game Jam 2019にて、3日間で制作したタイピング&アクションゲームです。<br>
+                「将来の夢がパン屋さん」という一言から生まれた作品で、昼間は限界ITエンジニア、夜は魔法のトングでパンを集める魔法少女というアイデアを形にしました。</td>
+            </tr>
+            <tr>
+              <th>【ゲーム構成】</th>
+              <td>前半ステージは難しめのコーディング風タイピングゲーム、後半は爽快感のある横スクロールシューティングゲームになっています。</td>
+            </tr>
+            <tr>
+              <th>【担当範囲】</th>
+              <td>イラスト、デザイン</td>
+            </tr>
+          </table>
+
+          <h3>開発の工夫</h3>
+          <p>3日間の開発期間のなかで、目玉のキャラクターイラスト制作とその他の素材の作業時間配分に気をつけて制作しました。</p>
+          <p>具体的には、まず全ての素材のラフを制作し実装した後、完成イラストを差し替えるアプローチを取ることで、効率よく高品質な作品を実現しました。</p>
+
+          <div class="button-container">
+            <a href="https://www.freem.ne.jp/win/game/20217" target="_blank" rel="noopener noreferrer" class="button">配布ページへ移動</a>
           </div>
+          <img src="image/mahousyoujyo-smile.png" alt="baker" class="detail-image">
+          <img src="image/desktop-zangyou.jpg" alt="baker" class="detail-image">
+        </div>
       </div>
 
-
-
-      <!-- ウェブサイト制作　-->
-      <h2>Websites</h2>
+      <!-- Others Section -->
+      <h2>Others</h2>
 
       <section class="latestProjects">
         <div class="project-box">
-          <div class="thumbnail-trigger" onclick="openModal('Accomodation-modal')"> 
-              <img src="image/BlueBird.jpg" alt="BlueBird Cottage">
-              <h3>民泊 黒門館アネックス1F / 青鳥荘</h3>
-          </div>
-      </section>
-
-      <!-- モーダルの内容　-->
-        <div id="Accomodation-modal" class="modal">
-          <div class="modal-content">
-            <span class="close-button" onclick="closeModal('Accomodation-modal')">&times;</span>
-            <h2>黒門館アネックス1F / 青鳥荘</h2>
-            <h3>ホームページ</h3>
-            <iframe 
-              id="AnnexFrame" 
-              src="https://kuromonkan.sakura.ne.jp/website/index.html" 
-              style="width: 100%; height: 500px; border: 1px solid #ccc;"
-              title="ホームページ プレビュー"
-            ></iframe>
-            <br><br>
-            <table>
-              <tr>
-                <th>【開発言語】</th>
-                <td>HTML, CSS, JavaScript</td>
-              </tr>
-              <tr>
-                <th>【制作概要】</th>
-                <td>日英中の言語切替が可能な、民泊宿泊者向けのホームページ兼アクセスガイドです。</td>
-              </tr>
-            </table>
-            
-            <div class="button-container"> 
-              <a href="https://kuromonkan.sakura.ne.jp/website/index.html" target="_blank" class="button">
-                ホームページへ移動</a>
-            </div>
+          <div class="thumbnail-trigger" onclick="openModal('Accomodation-modal')">
+            <img src="image/BlueBird.jpg" alt="BlueBird Cottage">
+            <h3>民泊 黒門館アネックス1F / 青鳥荘</h3>
           </div>
         </div>
+        <div class="project-box">
+          <div class="thumbnail-trigger" onclick="openModal('meal-suggest-modal')">
+            <img src="image/menu.png" alt="Meal Suggest Site">
+            <h3>ご飯サジェストサイト</h3>
+          </div>
+        </div>
+        <div class="project-box">
+          <div class="thumbnail-trigger" onclick="openModal('journal-figures-modal')">
+            <img src="image/movie/F09A.jpg" alt="Journal Figures">
+            <h3>論文の図版作成</h3>
+          </div>
+        </div>
+      </section>
+
+      <!-- Accommodation Modal -->
+      <div id="Accomodation-modal" class="modal">
+        <div class="modal-content">
+          <span class="close-button" onclick="closeModal('Accomodation-modal')">&times;</span>
+          <h2>黒門館アネックス1F / 青鳥荘</h2>
+          <h3>ホームページ</h3>
+          <iframe
+            id="AnnexFrame"
+            src="https://kuromonkan.sakura.ne.jp/website/index.html"
+            style="width: 100%; height: 500px; border: 1px solid #ccc;"
+            title="ホームページ プレビュー"
+          ></iframe>
+          <br><br>
+          <table>
+            <tr>
+              <th>【開発言語】</th>
+              <td>HTML, CSS, JavaScript</td>
+            </tr>
+            <tr>
+              <th>【サーバー】</th>
+              <td>さくらインターネット</td>
+            </tr>
+            <tr>
+              <th>【制作概要】</th>
+              <td>日英中の言語切替が可能な、民泊宿泊者向けのホームページ兼アクセスガイドです。</td>
+            </tr>
+          </table>
+
+          <h3>背景と改善点</h3>
+          <p>旧アクセスガイドはPDFで、3言語での説明が詰め込まれていて見づらかった。<br>
+            そのため、言語切り替えボタンのあるホームページを制作することで、見やすさと利便性を向上させました。</p>
+          
+          <h3>旧PDFの一部</h3>
+          <img src="image/parking.jpg" alt="parking">
+          <div class="button-container">
+            <a href="https://kuromonkan.sakura.ne.jp/website/index.html" target="_blank" class="button">ホームページへ移動</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Meal Suggest Modal -->
+      <div id="meal-suggest-modal" class="modal">
+        <div class="modal-content">
+          <span class="close-button" onclick="closeModal('meal-suggest-modal')">&times;</span>
+          <img src="image/menu.png" alt="menu">
+          <h2>ご飯サジェストサイト</h2>
+          <table>
+            <tr>
+              <th>【制作概要】</th>
+              <td>2025年冬インターンでのWebサイト制作プロジェクト。<br>
+                開発期間は10日間。<br>
+                SQLのデータベースからランダムで食事メニューを一つ提案するサイト。</td>
+            </tr>
+            <tr>
+              <th>【開発言語】</th>
+              <td>HTML, CSS, SQL</td>
+            </tr>
+            <tr>
+              <th>【チーム構成】</th>
+              <td>計5名（初対面チーム）</td>
+            </tr>
+            <tr>
+              <th>【担当】</th>
+              <td>プロジェクトリーダー、フロントエンド・ロジック実装</td>
+            </tr>
+          </table>
+
+          <h3>プロジェクトの工夫</h3>
+          <table>
+            <tr>
+              <th>【難易点】</th>
+              <td>プルダウンで選択したジャンルに絞り込んで抽出するロジックの実装が難しかったです。</td>
+            </tr>
+            <tr>
+              <th>【リーダーシップ】</th>
+              <td>ほぼ初対面の5人チームのリーダーを任されて不安でしたが、今までのチーム開発ノウハウをそのまま活かすことで対応しました。</td>
+            </tr>
+            <tr>
+              <th>【成果】</th>
+              <td>無事に目標のペースで実装を進めることができました。<br>
+                実際にチームメンバーがサイトを利用して食事メニューを決定しており、大変嬉しかったです。
+              </td>
+          </table>
+        </div>
+      </div>
+
+      <!-- Journal Figures Modal -->
+      <div id="journal-figures-modal" class="modal">
+        <div class="modal-content">
+          <span class="close-button" onclick="closeModal('journal-figures-modal')">&times;</span>
+          <h2>論文の図版作成</h2>
+          <p>知人のジャーナル用に描いたイラスト16枚です。<br>
+            映画の画面構成に関する論文で使用するため、配給会社に許可を求めたところ、直接使用は不可でしたが、トレスした上での図版作成は許可をいただくことができました。
+            <br>分量が多く作業期間が短かったため、最小の構成で最大の情報量を伝えることを意識して制作しました。結果的に、より映像の構成要素が分かりやすく伝わる図版になったと感じています。
+          </p>
+
+          <div class="vertical-image-gallery">
+            <img src="image/movie/F09A.jpg" alt="Figure 1">
+            <img src="image/movie/F09B.jpg" alt="Figure 2">
+            <img src="image/movie/F10A.jpg" alt="Figure 3">
+            <img src="image/movie/F10B.jpg" alt="Figure 4">
+            <img src="image/movie/F11_2001.jpg" alt="Figure 5">
+            <img src="image/movie/F12_2001.jpg" alt="Figure 6">
+            <img src="image/movie/F13A.jpg" alt="Figure 7">
+            <img src="image/movie/F13B.jpg" alt="Figure 8">
+            <img src="image/movie/F14A.jpg" alt="Figure 9">
+            <img src="image/movie/F14B.jpg" alt="Figure 10">
+            <img src="image/movie/F15A.jpg" alt="Figure 11">
+            <img src="image/movie/F15B.jpg" alt="Figure 12">
+            <img src="image/movie/F16A.jpg" alt="Figure 13">
+            <img src="image/movie/F16B.jpg" alt="Figure 14">
+            <img src="image/movie/F17A.jpg" alt="Figure 15">
+            <img src="image/movie/F17B.jpg" alt="Figure 16">
+          </div>
+        </div>
+      </div>
     </section>
 
-
-
-    <!-- グラフィック制作　-->
+    <!-- Graphics Section -->
     <section id="graphics">
-    <h1>Graphics</h1>
+      <h1>Graphics</h1>
       <div class="main-preview-area">
-        <img id="mainImage" src="image\enaga.png" alt="メイングラフィックプレビュー" class="main-image">
+        <img id="mainImage" src="image/enaga.png" alt="メイングラフィックプレビュー" class="main-image">
       </div>
 
       <div class="thumbnail-area">
-        <img 
-          src="image\enaga.png"
-          alt="サムネイル 初期"
-          class="thumbnail active"
-          data-large-src="image\enaga.png"
-          onclick="changeImage(this)"
-        >
-        <img 
-            src="image\suzume.png" 
-            alt="サムネイル 1" 
-            class="thumbnail" 
-            data-large-src="image\suzume.png"
-            onclick="changeImage(this)"
-        >
-        <img 
-            src="image\owl.png" 
-            alt="サムネイル 2" 
-            class="thumbnail" 
-            data-large-src="image\owl.png"
-            onclick="changeImage(this)"
-        >
-        <img 
-            src="image\tanabata.jpg" 
-            alt="サムネイル 3" 
-            class="thumbnail" 
-            data-large-src="image\tanabata.jpg"
-            onclick="changeImage(this)"
-        >
-        <img 
-            src="image\jane.jpg" 
-            alt="サムネイル 4" 
-            class="thumbnail" 
-            data-large-src="image\jane.jpg"
-            onclick="changeImage(this)"
-        >
-        <img 
-            src="image\wakamo.jpg" 
-            alt="サムネイル 5" 
-            class="thumbnail" 
-            data-large-src="image\wakamo.jpg"
-            onclick="changeImage(this)"
-        >
-        <img 
-            src="image\revdol.jpg" 
-            alt="サムネイル 6" 
-            class="thumbnail" 
-            data-large-src="image\revdol.jpg"
-            onclick="changeImage(this)"
-        >
-        <img 
-            src="image\tamamo.jpg" 
-            alt="サムネイル 7" 
-            class="thumbnail" 
-            data-large-src="image\tamamo.jpg"
-            onclick="changeImage(this)"
-        >
+        <img src="image/enaga.png" alt="サムネイル 初期" class="thumbnail active" data-large-src="image/enaga.png" onclick="changeImage(this)">
+        <img src="image/suzume.png" alt="サムネイル 1" class="thumbnail" data-large-src="image/suzume.png" onclick="changeImage(this)">
+        <img src="image/owl.png" alt="サムネイル 2" class="thumbnail" data-large-src="image/owl.png" onclick="changeImage(this)">
+        <img src="image/tanabata.jpg" alt="サムネイル 3" class="thumbnail" data-large-src="image/tanabata.jpg" onclick="changeImage(this)">
+        <img src="image/jane.jpg" alt="サムネイル 4" class="thumbnail" data-large-src="image/jane.jpg" onclick="changeImage(this)">
+        <img src="image/wakamo.jpg" alt="サムネイル 5" class="thumbnail" data-large-src="image/wakamo.jpg" onclick="changeImage(this)">
+        <img src="image/revdol.jpg" alt="サムネイル 6" class="thumbnail" data-large-src="image/revdol.jpg" onclick="changeImage(this)">
+        <img src="image/tamamo.jpg" alt="サムネイル 7" class="thumbnail" data-large-src="image/tamamo.jpg" onclick="changeImage(this)">
+        <img src="image/20200528-mini.jpg" alt="サムネイル 8" class="thumbnail" data-large-src="image/20200528-mini.jpg" onclick="changeImage(this)">
       </div>
     </section>
-
-
-
-    <!-- お問い合わせ　
-    <section id="contact"></section> -->
   </main>
-  
+
   <footer>
     <p>© 2025 All Rights Reserved.</p>
   </footer>
@@ -305,6 +415,4 @@
 
   <script src="script.js"></script>
 </body>
-
 </html>
-
