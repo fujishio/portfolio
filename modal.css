@@ -59,3 +59,40 @@
     margin-top: 15px;
     margin-bottom: 15px;
 }
+
+/* 動画コンテナ（レスポンシブ対応） */
+.video-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* 16:9 アスペクト比 */
+    height: 0;
+    overflow: hidden;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* 縦並びイメージギャラリー */
+.vertical-image-gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.vertical-image-gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}

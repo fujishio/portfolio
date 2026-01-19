@@ -1,214 +1,223 @@
 html {
-    /* ページ全体のスクロール動作をスムーズにする */
     scroll-behavior: smooth;
 }
 
 body {
-    background-color: #E6FAFA;
+    background-color: #CBECFA;
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
 }
 
 a {
-color: #333;
-text-decoration: none;
-font-family: 'Montserrat', sans-serif;
+    color: #333;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
 }
 
+/* ========== Header ========== */
 header {
-  position: static;
-  z-index: 100;
-  display: flex;
-  background-color: #9ED3E6;
-  padding: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  align-items: center;
-  font-family: 'Montserrat', sans-serif;
+    position: static;
+    z-index: 100;
+    display: flex;
+    background-color: #79CEF9;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
 }
 
 header h1 {
-  margin: 0;
-  margin-right: auto;
-  color: #fff;
-  font-size: 36px;
+    margin: 0;
+    margin-right: auto;
+    color: #fff;
+    font-size: 36px;
 }
 
 nav ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
 }
 
 nav li {
-  margin-right: 20px;
-  display: inline-block;
+    margin-right: 20px;
+    display: inline-block;
 }
 
 nav a {
-  text-decoration: none;
-  color: #fff;
-  font-size: 18px;
+    color: #fff;
+    font-size: 18px;
+    transition: color 0.3s ease;
 }
 
-/* メインの見た目*/
+nav a:hover {
+    color: #FFC011;
+}
+
+/* ========== Main Content ========== */
 main {
     color: #333;
-    margin-bottom: 50px;
-    background: linear-gradient( to bottom, #fff 480px, #ffffff00);
-}
-  
-.eng-text {
-    font-size: 20px;
-    margin-bottom: 0px;
-    font-family: 'Montserrat', sans-serif;
+    background-color: #e4f5fc;
+    background-image: 
+        linear-gradient(to bottom, #fff 480px, #ffffff00),
+        url('image/wave.png');
+    background-blend-mode: screen;
+    background-repeat: repeat-y, repeat;
+    background-size: 100% auto, auto;
 }
 
 section {
     margin-bottom: 20px;
 }
 
-th {
-    vertical-align: top;
-    white-space: nowrap;
-}
-
-/* worksの見た目 */
+/* ========== Typography ========== */
 main h1 {
-  color:#555;
-  font-size: 36px;
-  margin: 0px;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+    color: #333;
+    font-size: 36px;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 main h2 {
-  color:#777;
-  font-size: 24px;
-  margin: 0px;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+    color: #555;
+    font-size: 24px;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
+.eng-text {
+    font-size: 17px;
+    margin-bottom: 0;
+    margin-top: 15px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    line-height: 1.8;
+    color: #555;
+}
+
+.highlight-text {
+    font-size: 24px;
+    font-weight: 600;
+    color: #5395d6;
+}
+
+th {
+    vertical-align: top;
+    white-space: nowrap;
+    text-align: right;
+}
+
+/* モーダル内のh4スタイル */
+.modal-content h4 {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: #5395d6;
+}
+
+/* ========== Projects ========== */
 .latestProjects {
-  display: flex;
-  flex-wrap: wrap; /* 横幅が足りなくなったら折り返す指示（OK）*/
-  padding: 10px;
-  padding-top: 0px;
-  /* アイテムが複数行に分かれたときの行間の余白 (任意) */
-  gap: 20px; 
-  justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px 10px 0;
+    gap: 20px;
+    justify-content: center;
 }
 
 .project-box {
-  flex: 1 0 300px;
-  max-width: calc(50% - 10px);
-  padding: 10px;
+    flex: 1 0 300px;
+    max-width: calc(50% - 10px);
+    padding: 10px;
 }
 
 .project-box img {
-  width: 100%; 
-  height: auto;
-  border-radius: 5px;
-  
-  transition: all 0.3s ease; 
-  transform-origin: center center; 
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
 }
 
 .project-box img:hover {
-  border-radius: 5px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-  transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    transform: translateY(-8px);
 }
 
 @media (max-width: 700px) {
-  .project-box {
-    /* max-width の制限を解除し、親要素の幅いっぱいに広がるようにする */
-    max-width: 90%; 
-    /* flex-basis (基本幅) も 100% に変更し、確実に1列にする */
-    flex-basis: 100%;
-  }
+    .project-box {
+        max-width: 90%;
+        flex-basis: 100%;
+    }
 }
 
+/* ========== Buttons ========== */
 .button-container {
-    text-align: center; /* リンク（インライン要素）を中央揃えにする */
-    margin-top: 20px;   /* 上部に適度な余白を追加（任意） */
-    margin-bottom: 20px;/* 下部に適度な余白を追加（任意） */
+    text-align: center;
+    margin: 20px;
 }
 
 .button {
-    /* インライン要素をブロック要素のように扱い、幅・高さを設定できるようにする */
-    display: inline-block; 
-    
-    /* ボタンの見た目 */
-    padding: 10px 20px;         /* 上下左右に余白 */
-    background-color: #59afc9;  /* ボタンの色 */
-    color: white;               /* 文字色 */
-    text-decoration: none;      /* デフォルトの下線を消す */
-    border-radius: 5px;         /* 角丸にする */
-    font-size: 16px;            /* フォントサイズ */
-    
-    /* ホバー時の装飾（任意） */
-    transition: background-color 0.3s ease;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #FFC011;
+    color: white;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: all 0.3s ease;
 }
 
-/* ホバー時に色を変える */
 .button:hover {
-    background-color: #a2cedb;
+    background-color: #fcd876;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(89, 175, 201, 0.4);
 }
 
+/* ========== Footer ========== */
 footer {
-  position: static;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 30px; /* footerの高さを設定する */
-  background-color: #C3F2F5;
-  padding: 0px;
-  padding-bottom: 0px;
+    position: static;
+    height: 30px;
+    padding: 0;
 }
 
 footer p {
-  color: #fff;
-  font-size: small;
-  float: right;
-  margin-top: 8px;
-  margin-bottom: 0;
+    color: #fff;
+    text-align: center;
+    margin: 8px 0 0;
 }
 
+/* ========== Page Top Button ========== */
 #pageTop {
-    /* 1. 配置を固定（ビューポート基準） */
-    position: fixed; 
-    bottom: 20px;   /* 画面下端から20px */
-    right: 20px;    /* 画面右端から20px */
-    
-    /* 2. 見た目の設定 */
-    display: none;      /* 初期状態では非表示にする（JavaScriptで制御） */
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
     width: 50px;
     height: 50px;
-    line-height: 50px;  /* 高さと合わせることでテキストを垂直中央に寄せる */
+    line-height: 50px;
     text-align: center;
-    background-color: #59afc9d8; /* ボタンの背景色 */
-    color: white;           /* 文字色 */
-    text-decoration: none;  /* 下線なし */
-    border-radius: 5px;     /* 角丸 */
+    background-color: #79CEF9;
+    color: white;
+    border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     cursor: pointer;
-    transition: background-color 0.3s;
-    z-index: 999; /* 他の要素の上に表示されるように設定 */
+    transition: all 0.3s ease;
+    z-index: 999;
 }
 
-/* ホバー時のスタイル */
 #pageTop:hover {
-    background-color: #a2cedb;
+    background-color: #b4e0f7;
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(89, 175, 201, 0.4);
 }
 
-/* JavaScriptで表示・非表示を切り替えるためのクラス */
 #pageTop.show {
     display: block;
 }

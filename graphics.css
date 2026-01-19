@@ -6,6 +6,7 @@
 
 /* 1. 大プレビューエリア */
 .main-preview-area {
+    background-color: #ffffff;
     max-width: 800px; /* 大プレビューの最大幅 */
     margin: 0 auto 30px; 
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
@@ -50,7 +51,9 @@
     cursor: pointer; /* マウスカーソルをポインターにする */
     border: 3px solid transparent; /* アクティブなサムネイルのための枠線 */
     border-radius: 8px;
-    transition: border 0.2s ease;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
 }
 
 .thumbnail:hover, .thumbnail.active {
