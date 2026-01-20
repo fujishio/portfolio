@@ -6,6 +6,47 @@
     margin-bottom: 20px;
 }
 
+#top-image img {
+    max-width: 80%;
+    height: auto;
+}
+
+.eng-text {
+    max-width: 100%;
+    word-wrap: break-word;
+    margin-bottom: 0;
+    margin-top: 10px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    line-height: 1.8;
+    color: #555;
+}
+
+.highlight-text {
+    font-size: 22px;
+    font-weight: 600;
+    color: #5395d6;
+}
+
+/* レスポンシブフォントサイズ */
+@media (max-width: 640px) {
+    .highlight-text {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .highlight-text {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 401px) {
+    .highlight-text {
+        font-size: 16px;
+    }
+}
+
 ul {
     list-style: none;
     margin: 0;

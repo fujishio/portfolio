@@ -1,5 +1,6 @@
 html {
     scroll-behavior: smooth;
+    font-size: 16px;
 }
 
 body {
@@ -52,6 +53,15 @@ nav a {
     transition: color 0.3s ease;
 }
 
+@media (max-width: 480px) {
+    nav a {
+        font-size: 16px;
+    }
+    nav li {
+        margin-right: 10px;
+    }
+}
+
 nav a:hover {
     color: #FFC011;
 }
@@ -91,22 +101,6 @@ main h2 {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-.eng-text {
-    font-size: 17px;
-    margin-bottom: 0;
-    margin-top: 15px;
-    font-family: 'Montserrat', sans-serif;
-    text-align: center;
-    line-height: 1.8;
-    color: #555;
-}
-
-.highlight-text {
-    font-size: 24px;
-    font-weight: 600;
-    color: #5395d6;
 }
 
 th {
@@ -220,4 +214,9 @@ footer p {
 
 #pageTop.show {
     display: block;
+}
+
+/* YouTubeレスポンシブ対応 */
+iframe {
+    width: 100%;
 }
