@@ -326,7 +326,7 @@ export const works: Work[] = [
             </tr>
             <tr className="border-b border-limestone">
               <th className="text-right pr-4 py-2 whitespace-nowrap align-top text-acropolis">開発言語</th>
-              <td className="py-2">HTML, CSS, SQL</td>
+              <td className="py-2">HTML, PHP, CSS, SQL</td>
             </tr>
             <tr className="border-b border-limestone">
               <th className="text-right pr-4 py-2 whitespace-nowrap align-top text-acropolis">チーム構成</th>
