@@ -200,7 +200,7 @@ export const works: Work[] = [
 
         <h3 className="text-lg font-bold border-b border-parthenon pb-1">ホームページ</h3>
         <iframe
-          src="https://kuromonkan.sakura.ne.jp/website/index.html"
+          src="https://kuromonkan.com/"
           className="w-full h-[400px] border border-limestone rounded-lg"
           title="ホームページ プレビュー"
         />
@@ -209,11 +209,11 @@ export const works: Work[] = [
           <tbody>
             <tr className="border-b border-limestone">
               <th className="text-right pr-4 py-2 whitespace-nowrap align-top text-acropolis">開発言語</th>
-              <td className="py-2">HTML, CSS, JavaScript</td>
+              <td className="py-2">TypeScript, Next.js, Tailwind CSS</td>
             </tr>
             <tr className="border-b border-limestone">
               <th className="text-right pr-4 py-2 whitespace-nowrap align-top text-acropolis">サーバー</th>
-              <td className="py-2">さくらインターネット</td>
+              <td className="py-2">Cloudflare</td>
             </tr>
             <tr className="border-b border-limestone">
               <th className="text-right pr-4 py-2 whitespace-nowrap align-top text-acropolis">制作概要</th>
