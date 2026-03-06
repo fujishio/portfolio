@@ -1,15 +1,16 @@
 import { useState } from 'react'
 
+const base = import.meta.env.BASE_URL
 const images = [
-  { src: '/image/enaga.png', alt: 'エナガ' },
-  { src: '/image/suzume.png', alt: 'スズメ' },
-  { src: '/image/owl.png', alt: 'フクロウ' },
-  { src: '/image/tanabata.jpg', alt: '七夕' },
-  { src: '/image/jane.jpg', alt: 'Jane' },
-  { src: '/image/wakamo.jpg', alt: 'ワカモ' },
-  { src: '/image/revdol.jpg', alt: 'Revdol' },
-  { src: '/image/tamamo.jpg', alt: 'タマモ' },
-  { src: '/image/20200528-mini.jpg', alt: 'イラスト' },
+  { src: `${base}image/enaga.png`, alt: 'エナガ' },
+  { src: `${base}image/suzume.png`, alt: 'スズメ' },
+  { src: `${base}image/owl.png`, alt: 'フクロウ' },
+  { src: `${base}image/tanabata.jpg`, alt: '七夕' },
+  { src: `${base}image/jane.jpg`, alt: 'Jane' },
+  { src: `${base}image/wakamo.jpg`, alt: 'ワカモ' },
+  { src: `${base}image/revdol.jpg`, alt: 'Revdol' },
+  { src: `${base}image/tamamo.jpg`, alt: 'タマモ' },
+  { src: `${base}image/20200528-mini.jpg`, alt: 'イラスト' },
 ]
 
 export default function Graphics() {

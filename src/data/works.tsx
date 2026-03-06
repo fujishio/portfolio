@@ -1,5 +1,7 @@
 import type { ReactNode } from 'react'
 
+const base = import.meta.env.BASE_URL
+
 export type Work = {
   id: string
   title: string
@@ -12,11 +14,11 @@ export const works: Work[] = [
   {
     id: 'birdol',
     title: 'Birdol March',
-    thumbnail: '/image/birdol.jpg',
+    thumbnail: `${base}image/birdol.jpg`,
     category: 'games',
     detail: (
       <div className="space-y-6">
-        <img src="/image/birdolBig.jpg" alt="Birdol March" className="w-full rounded-lg" />
+        <img src={`${base}image/birdolBig.jpg`} alt="Birdol March" className="w-full rounded-lg" />
         <h2 className="text-2xl font-bold text-greek-blue">Birdol March / バードル・マーチ</h2>
         <p className="text-center text-blue-eyes font-bold text-lg">野鳥×アイドル＝バードル！！</p>
 
@@ -96,7 +98,7 @@ export const works: Work[] = [
   {
     id: 'hulogen',
     title: 'Hulog:N',
-    thumbnail: '/image/hulogen.jpg',
+    thumbnail: `${base}image/hulogen.jpg`,
     category: 'games',
     detail: (
       <div className="space-y-6">
@@ -145,12 +147,12 @@ export const works: Work[] = [
   {
     id: 'baker',
     title: 'I wanna be the baker',
-    thumbnail: '/image/Baker.jpg',
+    thumbnail: `${base}image/Baker.jpg`,
     category: 'games',
     detail: (
       <div className="space-y-6">
         <h2 className="text-2xl font-bold text-greek-blue">I wanna be the baker</h2>
-        <img src="/image/baker-title.jpg" alt="I wanna be the baker" className="w-full rounded-lg" />
+        <img src={`${base}image/baker-title.jpg`} alt="I wanna be the baker" className="w-full rounded-lg" />
 
         <table className="w-full text-sm">
           <tbody>
@@ -184,15 +186,15 @@ export const works: Work[] = [
           </a>
         </div>
 
-        <img src="/image/mahousyoujyo-smile.png" alt="魔法少女" className="w-full rounded-lg" />
-        <img src="/image/desktop-zangyou.jpg" alt="残業デスクトップ" className="w-full rounded-lg" />
+        <img src={`${base}image/mahousyoujyo-smile.png`} alt="魔法少女" className="w-full rounded-lg" />
+        <img src={`${base}image/desktop-zangyou.jpg`} alt="残業デスクトップ" className="w-full rounded-lg" />
       </div>
     ),
   },
   {
     id: 'accommodation',
     title: '民泊 黒門館アネックス1F / 青鳥荘',
-    thumbnail: '/image/BlueBird.jpg',
+    thumbnail: `${base}image/BlueBird.jpg`,
     category: 'others',
     detail: (
       <div className="space-y-6">
@@ -226,7 +228,7 @@ export const works: Work[] = [
         <p>旧アクセスガイドはPDFで、3言語での説明が詰め込まれていて見づらかった。そのため、言語切り替えボタンのあるホームページを制作することで、見やすさと利便性を向上させました。</p>
 
         <h3 className="text-lg font-bold border-b border-parthenon pb-1">旧PDFの一部</h3>
-        <img src="/image/parking.jpg" alt="旧PDF" className="w-full rounded-lg" />
+        <img src={`${base}image/parking.jpg`} alt="旧PDF" className="w-full rounded-lg" />
 
         <div className="text-center">
           <a
@@ -244,15 +246,15 @@ export const works: Work[] = [
     {
     id: 'share-house-work',
     title: 'シェアハウス管理アプリ「Share House Work」',
-    thumbnail: '/image/share-image.png',
+    thumbnail: `${base}image/share-image.png`,
     category: 'others',
     detail: (
       <div className="space-y-6">
-        <img src="/image/share-image.png" alt="Share House Work" className="w-full rounded-lg" />
+        <img src={`${base}image/share-image.png`} alt="Share House Work" className="w-full rounded-lg" />
         <h2 className="text-2xl font-bold text-greek-blue">シェアハウス管理アプリ「Share House Work」</h2>
 
         <h3 className="text-lg font-bold border-b border-parthenon pb-1">アプリ概要</h3>
-        <img src="/image/share-house-tasks.png" alt="タスク管理画面" className="w-full rounded-lg" />
+        <img src={`${base}image/share-house-tasks.png`} alt="タスク管理画面" className="w-full rounded-lg" />
 
         <table className="w-full text-sm">
           <tbody>
@@ -311,11 +313,11 @@ export const works: Work[] = [
   {
     id: 'meal-suggest',
     title: 'ご飯サジェストサイト',
-    thumbnail: '/image/menu.png',
+    thumbnail: `${base}image/menu.png`,
     category: 'others',
     detail: (
       <div className="space-y-6">
-        <img src="/image/menu.png" alt="ご飯サジェストサイト" className="w-full rounded-lg" />
+        <img src={`${base}image/menu.png`} alt="ご飯サジェストサイト" className="w-full rounded-lg" />
         <h2 className="text-2xl font-bold text-greek-blue">ご飯サジェストサイト</h2>
 
         <table className="w-full text-sm">
@@ -362,7 +364,7 @@ export const works: Work[] = [
   {
     id: 'journal-figures',
     title: '論文の図版作成',
-    thumbnail: '/image/movie/F09A.jpg',
+    thumbnail: `${base}image/movie/F09A.jpg`,
     category: 'others',
     detail: (
       <div className="space-y-6">
@@ -374,7 +376,7 @@ export const works: Work[] = [
         </p>
         <div className="space-y-4">
           {['F09A','F09B','F10A','F10B','F11_2001','F12_2001','F13A','F13B','F14A','F14B','F15A','F15B','F16A','F16B','F17A','F17B'].map((name) => (
-            <img key={name} src={`/image/movie/${name}.jpg`} alt={name} className="w-full rounded-lg shadow-md" />
+            <img key={name} src={`${base}image/movie/${name}.jpg`} alt={name} className="w-full rounded-lg shadow-md" />
           ))}
         </div>
       </div>

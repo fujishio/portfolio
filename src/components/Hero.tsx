@@ -33,7 +33,7 @@ export default function Hero() {
           <div className="relative z-0 flex-shrink-0 md:-ml-48 self-center md:self-start">
             <div className="absolute inset-0 bg-bougainvillea translate-x-2 translate-y-2" />
             <img
-              src="/image/20200508-mini.jpg"
+              src={`${import.meta.env.BASE_URL}image/20200508-mini.jpg`}
               alt="FUJISHIO"
               className="relative w-full h-full object-cover"
             />
