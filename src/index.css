@@ -1,0 +1,38 @@
+@import "tailwindcss";
+
+@theme {
+  --color-greek-blue: #0065B2;
+  --color-blue-eyes: #67A5DA;
+  --color-sacred-white: #FDFDFB;
+  --color-limestone: #E5EAEB;
+  --color-parthenon: #C8BCA0;
+  --color-acropolis: #C19969;
+  --color-stone-pavement: #B8C2C8;
+  --color-morning-wall: #FBE4E2;
+  --color-bougainvillea: #DB077F;
+
+  --font-sans: 'M PLUS Rounded 1c', 'Montserrat', sans-serif;
+  --font-display: 'Montserrat', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background-color: var(--color-sacred-white);
+  color: #333;
+}
+
+/* Scroll-triggered fade-in animation */
+.fade-in {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
